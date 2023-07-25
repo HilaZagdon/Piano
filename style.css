@@ -1,33 +1,38 @@
 .whitetiles {
-  height: 150px;
-  width: 40px;
+  height: 200px;
+  width: 60px;
   background-color: white;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   float: left;
-  margin: 200px -10px 200px -10px;
+  margin: 200px -10px 100px -10px;
   padding: 0;
   border: 1px solid black;
-  color: darkcyan;
+  color: rgb(255, 255, 255);
   font-size: 30px;
 }
 
 body {
-  background-color: darkcyan;
+  background-repeat: no-repeat;
+  background-size: 1600px 750px;
+
+  background-image: url(piano-oldschool-vintage-music.jpg);
 }
 
 section {
-  margin-left: 600px;
+  margin-left: 450px;
   display: flex;
 }
 
 .blacktiles {
   position: relative;
-  height: 90px;
+  height: 120px;
   width: 20px;
   margin-top: 200px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: rgb(0, 0, 0);
+
   background-color: black;
   z-index: 9;
 }
@@ -41,12 +46,14 @@ section {
   box-shadow: 6px 6px 6px 2px rgba(0, 0, 0, 0.782),
     inset 3px 2px 5px 1px rgba(40, 37, 37, 0.652);
   color: black;
-  transition: color 2s;
+  transition: color 1s;
 }
 
 .blacktiles:hover {
   box-shadow: 3px 3px 3px 2px rgba(60, 56, 56, 0.652),
     inset 3px 2px 5px 1px rgba(163, 151, 151, 0.652);
+  color: white;
+  transition: color 1s;
 }
 
 p {
@@ -55,5 +62,17 @@ p {
 }
 
 .lettersW {
-  margin-left: 12px;
+  margin-left: 20px;
+}
+
+h1 {
+  margin-left: 20px;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.lettersB {
+  margin-top: 95px;
+  margin-left: 4px;
 }
